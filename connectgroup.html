@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #box1{grid-area: box1;
+        color: white;
+        background-color: rgb(23, 0, 37);}
+        
+        
+
+        .main{            
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 750px;
+            height: 400px;
+            display: grid;
+            grid-template-areas: 
+            'box1';
+        }
+         
+        .main>div{
+            border-radius: 20px;
+            box-shadow: 5px 5px grey;
+            padding: 10px;
+            margin: 10px;
+            color: crimson;
+        }
+
+        label{
+            font-size: 20px;
+            font-style: bold;
+            
+        }
+        input{
+            width: 200px ;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        button{
+            border-radius: 5px;
+            width: 70px;
+            height: 50px;
+            font-size: 15px;
+            padding: 5px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: white;
+        }
+        #button button{
+            width: 250px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(68, 3, 54);
+            color: white;
+            border-radius: 5px;
+        }
+
+        button:active{
+            background-color: rgb(5, 150, 130);
+        }
+
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+           
+    </style>
+</head>
+<body>
+    <div align="center" id="header">
+        <div class="main" align="center"> 
+        <div id="box1">
+            <h2>Connect with Group</h2>
+            <img src="buddy.jpg" alt="studybuddy">
+            <br>
+            <br>
+            <form action="">
+            <label>Pursuing Degree</label>  <br> <br>
+            <input type="text" placeholder="Enter a Text" list="Pursuing Degree"> 
+            <datalist id="Pursuing Degree">
+                <option value="BE/Btech">
+                <option value="Bsc">
+                <option value="Msc">
+                <option value="Diploma">
+            </datalist>
+            </form> <br>
+            <label for="">Area of Interest</label> <br> <br>
+            <button onclick="alert('Selected')">C++ </button> <button onclick="alert('Selected')">Java</button> 
+            <button onclick="alert('Selected')">Python</button> <buttonon click="alert('Selected')">C</button>
+                 <br> <br>
+            <button onclick="alert('Selected')">AI</button> <button onclick="alert('Selected')">ML</button>
+             <button onclick="alert('Selected')">React</button> <br> <br>
+            <button onclick="alert('Selected')">HTML</button> <button onclick="alert('Selected')">CSS</button> 
+            <button onclick="alert('Selected')">JS</button> <button onclick="alert('Selected')">NLP</button> <br> <br>
+            <div id="button">
+
+            <button>Find Your Group &#9658;</button>
+            <button align="center"><a href="studybuddy.html">Back</a> </button>
+            </div>
+
+        </div>
+      
+        </div>
+        </div>
+
+
+    
+</body>
+</html>

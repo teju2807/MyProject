@@ -5,20 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        #colorbox1{
+            grid-area: colorbox1;
+            background-color: rgb(23, 0, 37);
+            color: white;
+        }
+        #colorbox2{
+            grid-area: colorbox2;
+            background-color: rgb(23, 0, 37);
+            color: white;
+        }
+        #colorbox3{
+            grid-area: colorbox3;
+            background-color: rgb(23, 0, 37);
+            color: white;
+        }
+        #colorbox4{
+            grid-area: colorbox4;
+            background-color: rgb(23, 0, 37);
+            color: white;
+        }
+
+
+        .main{
+            text-align: center;
+            width: 600px;
+            height: 500px;
+            display: grid;
+            grid-template-areas: 
+            'colorbox1 colorbox1 colorbox2 colorbox2'
+            'colorbox1 colorbox1 colorbox2 colorbox2'
+            'colorbox3 colorbox3 colorbox4 colorbox4'
+            'colorbox3 colorbox3 colorbox4 colorbox4'
+            ;
+        }
+         
+        .main>div{
+            border-radius: 20px;
+            box-shadow: 5px 5px grey;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        button{
+            width: 250px;
+            height: 70px;
+            font-size: 20px;
+            padding: 5px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #colorbox1 img{
+            width: 250px;
+            height: 200px;
+        }
+
+        #colorbox2 img{
+            width: 250px;
+            height: 200px;
+        }
+
+        #colorbox3 img{
+            width: 250px;
+            height: 200px;
+        }
+
+        #colorbox4 img{
+            width: 250px;
+            height: 200px;
+        }
+
+        button{
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+            padding: 5px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(23, 0, 37);
+            color: white;
+        }
+            
+    </style>
 </head>
 <body>
-    <div class="Container-1">
-        <h1>Mentor Connect</h1>
-    </div>
-    <div class="Container-2">
-        <h1>Girl Table</h1>
-    </div>
-    <div class="Container-3">
-        <h1>Study Buddy</h1>
-    </div>
-    <div class="Container-4">
-        <h1>Community Support</h1>
-    </div>
+    <div align="center" id="header">
+        <div class="main" align="center"> 
+        <div id="colorbox1">
+            <h2>Mentor Connect</h2>
+            <img src="mentor.png" alt="">
+        </div>
+        <br>
+        <div id="colorbox2">
+            <h2><a href="studybuddy.html">Study Buddy</a></h2>
+            <img src="buddy.jpg" alt="">
+        </div>
+        <br>
+        <div id="colorbox3">
+            <h2>Girl Table</h2>
+            <img src="girltable.jpg" alt="">
+        </div>
+        <br>
+        <div id="colorbox4">
+            <h2> <a href="community.html"> Community Support</h2></a>
+            <img src="community.jpg" alt="">
+        </div>
+        </div>
+        <br><br>
+        
+        </div>
+        <button align="center"><a href="html.html">Back to Home</a> </button>
+</body>
+</html>
+<!-- <script>
+    function changecolor(){
+        var r = Math.floor(Math.random()*255);
+        var g = Math.floor(Math.random()*255);
+        var b = Math.floor(Math.random()*255);
+        var mycolor = "rgb(" + r + "," + g + "," + b + ")"; 
+        var mycolor2 = "rgb(" + g + "," + g + "," + r + ")"; 
+        var mycolor3 = "rgb(" + r + "," + r + "," + b + ")"; 
+        var mycolor4 = "rgb(" + r + "," + g + "," + g + ")"; 
+        
+        
+        document.getElementById("colorbox1").style.
+        backgroundColor = mycolor;
+        console.log(mycolor);
+        document.getElementById("colorbox2").style.
+        backgroundColor = mycolor2;
+        console.log(mycolor2);
+        document.getElementById("colorbox3").style.
+        backgroundColor = mycolor3;
+        console.log(mycolor3);
+        document.getElementById("colorbox4").style.
+        backgroundColor = mycolor4;
+        console.log(mycolor4);
+    }
+</script> -->
 </body>
 </html>

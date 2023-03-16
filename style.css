@@ -10,3 +10,35 @@
     background-size: cover;
     height: 100vh;
 }
+.box1{
+    padding-left: 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-right: 50px;
+    color: aqua;
+    box-shadow: 5px 5px;
+}
+.box2{
+    padding-left: 250px;
+    margin: 50px 100px;
+    color: brown;
+    box-sizing: border-box;
+    box-shadow: 5px 5px;
+}
+.box3{
+    padding-top: 250px;
+    margin-top: 250px;
+    margin-right: 250px;
+    color: brown;
+    box-sizing: border-box;
+    box-shadow: 5px 5px;
+}
+.box4{
+    padding-left: 250px;
+    padding-top: 250px;
+    margin-top: 250px;
+    margin-right: 450px;
+    color: brown;
+    box-sizing: border-box;
+    box-shadow: 5px 5px;
+}
